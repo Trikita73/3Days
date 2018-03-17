@@ -4,22 +4,8 @@ $(document).ready(function() {
 		$(".top_mnu ul").slideToggle();
 	});
 
+
 	$(".fancybox").fancybox();
-
-
-
-	$("#portfolio_grid").mixItUp();
-
-	$(".s_portfolio li").click(function() {
-		$(".s_portfolio li").removeClass("active");
-		$(this).addClass("active");
-	});
-
-	$(".popup").magnificPopup({type:"image"});
-	$(".popup_content").magnificPopup({
-		type:"inline",
-		midClick: true
-	});
 
 
 	function heightDetect() {
@@ -33,16 +19,23 @@ $(document).ready(function() {
 
 	$("input, select, textarea").jqBootstrapValidation();
 
+
 	$(".top_mnu ul a").mPageScroll2id();
 
+
+	$(".section_header h2").animated("zoomInRight");
+	$(".s_descr").animated("lightSpeedIn");
+
+	$(".items_resume").animated("fadeInLeftBig");
+
+	$(".social_wrap").animated("bounceInUp");
+
 });
+
 $(window).load(function() {
 
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
-
-	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-	$(".top_text p").animated("fadeInUp", "fadeOutDown");
 
 }); 
 
