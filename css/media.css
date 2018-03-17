@@ -48,6 +48,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.top_wrapper .top_text h1 {
+		font-size: 2em;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+
 	.main_footer p {
 		float: left;
 	}

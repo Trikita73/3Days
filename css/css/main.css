@@ -52,9 +52,6 @@ body textarea:required:valid {
   .headhesive--stick .main_mnu_button {
     font-size: 28px; }
 
-.main_head {
-  min-height: 480px; }
-
 section,
 .main_head {
   position: relative; }
@@ -74,7 +71,7 @@ section {
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    margin: 20px 0 16px;
+    margin: 20 0 16px;
     letter-spacing: 1px;
     color: #e2e2e2; }
     section h2::after {
@@ -162,10 +159,6 @@ section {
   height: auto;
   margin-bottom: 25px; }
 
-.logo_container {
-  float: left;
-  margin-top: 13px; }
-
 .section_content .logo_container {
   text-align: center;
   float: none; }
@@ -213,6 +206,9 @@ section {
     float: right;
     font-size: 15px; }
 
+.main_head {
+  min-height: 480px; }
+
 .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -237,6 +233,19 @@ section {
     top: 50%;
     position: absolute; }
 
+.logo_container {
+  float: left;
+  margin-top: 13px; }
+
+svg {
+  height: 60px;
+  width: 60px;
+  z-index: 1;
+  position: relative; }
+
+svg path {
+  fill: #e0e0e0; }
+
 .top_mnu ul {
   float: right; }
   .top_mnu ul a:hover {
@@ -252,6 +261,14 @@ section {
   font-size: 16px;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
+
+.person {
+  text-align: center;
+  margin-bottom: 35px; }
+  .person img {
+    max-width: 220px;
+    display: inline-block;
+    border-radius: 50%; }
 
 .s_about p {
   margin-bottom: 25px; }
@@ -302,6 +319,14 @@ section {
     .resume_container .resume_item:last-child p {
       margin-bottom: 0; }
 
+.resume_icon {
+  font-size: 40px;
+  margin-bottom: 35px; }
+  .resume_icon .year {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 0 10px; }
+
 .s_portfolio ul,
 .s_portfolio li {
   list-style-type: none;
@@ -317,3 +342,105 @@ section {
   line-height: 2; }
 .s_portfolio ul {
   margin-bottom: 50px; }
+
+.portfolio_item {
+  display: none;
+  padding: 0; }
+  .portfolio_item img {
+    width: 100%; }
+  .portfolio_item .port_item_cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 15%;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+  .portfolio_item:hover .port_item_cont {
+    opacity: 1;
+    padding-top: 20%; }
+  .portfolio_item h3 {
+    color: #fff;
+    margin-bottom: 0; }
+  .portfolio_item a {
+    background-color: transparent;
+    border: #fff 1px solid;
+    padding: 2px 10px;
+    display: inline-block; }
+
+.podrt_descr {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto; }
+  .podrt_descr p,
+  .podrt_descr h3 {
+    padding: 20px;
+    padding-bottom: 0; }
+  .podrt_descr h3 {
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 20px;
+    padding-top: 25px; }
+  .podrt_descr p {
+    margin-top: 0; }
+  .podrt_descr img {
+    width: 100%;
+    margin-top: 10px; }
+
+.modal-box-content {
+  position: relative; }
+
+.contact_box {
+  margin-bottom: 30px; }
+  .contact_box h3 {
+    text-align: left;
+    color: #000;
+    margin-bottom: 0px;
+    font-size: 14px; }
+  .contact_box .contacts_icon {
+    font-size: 30px; }
+  .contact_box p {
+    margin-top: 5px; }
+
+.main_form button {
+  border: none;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+  float: right; }
+
+.form-group {
+  display: block;
+  margin-bottom: 20px; }
+  .form-group .color_element {
+    font-weight: 700;
+    font-size: 18px; }
+  .form-group .text-danger {
+    font-size: 11px;
+    margin-top: 5px;
+    display: block; }
+    .form-group .text-danger ul,
+    .form-group .text-danger li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+  .form-group input,
+  .form-group textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    line-height: 40px;
+    text-indent: 12px;
+    font-size: 12px;
+    background-color: transparent; }
