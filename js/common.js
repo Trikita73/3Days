@@ -30,6 +30,9 @@ $(document).ready(function() {
 
 	$(".social_wrap").animated("bounceInUp");
 
+	$(".section_content .item_image_animated1").animated("fadeInLeftBig");
+	$(".section_content .item_image_animated2").animated("fadeInRightBig");
+
 });
 
 $(window).load(function() {
