@@ -44,6 +44,9 @@
 	section h2::after {
 		display: none;
 	}
+	.items_resume img {
+		margin-bottom: 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
