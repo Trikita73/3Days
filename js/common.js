@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
 	$(".section_header h2").animated("zoomInRight");
-	$(".s_descr").animated("lightSpeedIn");
+	$(".s_descr").animated("fadeIn");
 
 	$(".items_resume").animated("fadeInLeftBig");
 
