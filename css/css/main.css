@@ -198,17 +198,21 @@ section {
   margin-top: 40px; }
 
 .main_footer {
-  padding: 20px 0;
+  padding: 8px 0;
   font-weight: 300; }
   .main_footer p {
     color: #e9e9e9;
     padding: 4px;
     float: right;
     font-size: 12px; }
+  .main_footer img {
+    height: 26px;
+  }  
 
 .main_head {
   min-height: 480px; }
 
+/*
 .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -232,6 +236,7 @@ section {
     left: 50%;
     top: 50%;
     position: absolute; }
+*/    
 
 .logo_container {
   float: left;
