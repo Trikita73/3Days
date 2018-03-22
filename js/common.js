@@ -35,6 +35,23 @@ $(document).ready(function() {
 
 });
 
+$('#s_top').hide();
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#s_top').fadeIn();
+			} else {
+				$('#s_top').fadeOut();
+			}
+		});
+		$("#s_top").click(function () {
+			$("body, html").animate({
+				scrollTop: 0
+			}, 1700);
+			return false;
+		});
+	});
+
 /*
 $(window).load(function() {
 
