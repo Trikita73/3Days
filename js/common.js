@@ -4,6 +4,10 @@ $(document).ready(function() {
 		$(".top_mnu ul").slideToggle();
 	});
 
+	$(".top_mnu ul li").click(function() {
+		$(".top_mnu ul").slideToggle();
+	});
+
 
 	$(".fancybox").fancybox();
 
