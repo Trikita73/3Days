@@ -4,9 +4,14 @@ $(document).ready(function() {
 		$(".top_mnu ul").slideToggle();
 	});
 
-	$(".top_mnu ul li").click(function() {
-		$(".top_mnu ul").slideToggle();
-	});
+	
+	
+	if(document.documentElement.clientWidth < 768) {
+	    // тут ваш скрипт
+	    $(".top_mnu ul li").click(function() {
+			$(".top_mnu ul").slideToggle();
+		});
+	}
 
 
 	$(".fancybox").fancybox();
@@ -67,3 +72,5 @@ $(window).load(function() {
 
 //Скролл Верхнего Меню 
 var header = new Headhesive('.head_top');
+
+
